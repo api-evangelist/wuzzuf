@@ -1,0 +1,28 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: wuzzuf.net
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Oct 11 16:15:01 2026 GMT
+  hsts: true
+  hsts_max_age: 15552000
+- host: basharsoft.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 23 17:07:17 2026 GMT
+  hsts: false
+domains:
+- domain: wuzzuf.net
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: quarantine
+- domain: basharsoft.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

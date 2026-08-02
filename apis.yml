@@ -1,7 +1,11 @@
 aid: wuzzuf
 name: Wuzzuf
-description: Wuzzuf is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Wuzzuf is Egypt's leading online recruitment platform, operated by Cairo-based
+  BasharSoft and backed by investors including 500 Global. It connects millions of
+  job seekers with tens of thousands of employers across Egypt and the Middle East,
+  offering job search, applicant tracking, employer branding pages, and recruitment
+  products for companies. Wuzzuf does not currently publish a public developer API,
+  API documentation, or machine-readable API artifacts.
 url: https://raw.githubusercontent.com/api-evangelist/wuzzuf/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +13,29 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+image: https://static.wuzzuf-data.net/js-og-img-f2c723fe34fc470a9ad785fe2b24d4fa.jpg
 tags:
 - Company
+- Jobs
+- Recruitment
+- Careers
+- Employment
+- HR
+- Egypt
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +44,32 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://wuzzuf.net
+- type: Website
+  name: BasharSoft (parent company)
   url: https://basharsoft.com
+- type: Blog
+  url: https://wuzzuf.net/careers/
+- type: Support
+  url: https://wuzzuf.net/contact-us
+- type: TermsOfService
+  url: https://wuzzuf.net/policies
+- type: PrivacyPolicy
+  url: https://wuzzuf.net/policies
+- type: Pricing
+  url: https://wuzzuf.net/pricing
+- type: SignUp
+  url: https://wuzzuf.net/register
+- type: Login
+  url: https://wuzzuf.net/login
+- type: GitHubOrganization
+  url: https://github.com/BasharSoft
+- type: DomainSecurity
+  url: security/wuzzuf-domain-security.yml
+- type: LLMsTxt
+  url: llms/wuzzuf-llms.txt
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

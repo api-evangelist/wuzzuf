@@ -1,0 +1,29 @@
+generated: '2026-07-21'
+method: searched
+note: Live probes of the /.well-known/ discovery surface on wuzzuf.net and basharsoft.com.
+  No documents were published (wuzzuf.net returns 403 on the /.well-known/ path from
+  its WAF even with a browser user agent; basharsoft.com returns 404). Statuses recorded;
+  no raw files saved because nothing returned 200.
+hosts:
+- host: https://wuzzuf.net
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
+  - path: /.well-known/ai-plugin.json
+    status: 403
+  - path: /security.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
+- host: https://basharsoft.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /llms.txt
+    status: 404
